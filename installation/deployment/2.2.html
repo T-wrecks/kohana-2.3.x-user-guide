@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    installation:deployment:2.2    [Kohana User Guide]
+</title>
+<meta name="generator" content="DokuWiki Release 2008-05-05" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-05-01T20:31:13-0500" />
+<meta name="keywords" content="installation,deployment,2.2" />
+<link rel="search" type="application/opensearchdescription+xml" href="../../lib/exe/opensearch.php.html" title="Kohana User Guide" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="2-do=index.2" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../../feed.php.html" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../../feed-mode=list&ns=installation_deployment.php.html" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="../../_export/xhtml/installation/deployment/2.2" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../../_export/raw/installation/deployment/2.2" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css-s=all&t=kohana.php.html" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css-t=kohana.php.html" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css-s=print&t=kohana.php.html" />
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js-edit=0&write=0.php.html" ></script>
+<link rel="shortcut icon" href="../../lib/tpl/kohana/images/favicon.ico" />
+</head>
+<body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="http://kohanaframework.org/">Kohana</a>
+<!-- End Logo -->
+
+<div id="corner">
+<form action="/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form><br />
+<form class="button btn_recent" method="get" action="/"><div class="no"><input type="hidden" name="do" value="recent" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [ALT+R]" /></div></form></div>
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul>
+<li class="top active"><a href="../../index.html">Contents</a></li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+</ul>
+</div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<p id="version-warning"><strong>This is documentation for Kohana v2.3.x. For v3.x documentation, see <a href="http://kohanaframework.org/guide" class="urlextern" title="http://kohanaframework.org/guide"  rel="nofollow">http://kohanaframework.org/guide</a> .</strong></p>
+
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#deploying_kohana_to_production" class="toc">Deploying Kohana to Production:</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#production_mode" class="toc">Production Mode</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#update_your_configuration_files" class="toc">Update Your Configuration Files</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#config.php" class="toc">config.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#log.php" class="toc">log.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#routes.php" class="toc">routes.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#database.php" class="toc">database.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#cookie.php" class="toc">cookie.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#session.php" class="toc">session.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#encryption.php" class="toc">encryption.php</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#auth.php" class="toc">auth.php</a></span></div></li>
+</ul>
+</li>
+<li class="level2"><div class="li"><span class="li"><a href="#protect_kohana_directories" class="toc">Protect Kohana Directories</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Status</th><td class="col1">Draft</td>
+	</tr>
+	<tr class="row1">
+		<th class="col0">Todo</th><td class="col1">Content Review and additions</td>
+	</tr>
+</table>
+
+
+
+<h1><a name="deploying_kohana_to_production" id="deploying_kohana_to_production">Deploying Kohana to Production:</a></h1>
+<div class="level1">
+
+<p>
+Here are a few items you should keep in mind before deploying your Kohana application to a production environment.
+</p>
+
+</div>
+
+<h2><a name="production_mode" id="production_mode">Production Mode</a></h2>
+<div class="level2">
+
+<p>
+Kohana offers a single declaration to change between production and development mode. This is defined at the top of index.php:
+</p>
+<pre class="code php"><a href="http://www.php.net/define"><span class="kw3">define</span></a><span class="br0">&#40;</span><span class="st0">'IN_PRODUCTION'</span><span class="sy0">,</span> <span class="kw2">FALSE</span><span class="br0">&#41;</span><span class="sy0">;</span></pre>
+<p>
+By setting this to <code>TRUE</code>, you automatically disable all module demonstration controllers and the default Kohana welcome page. This “toggle” can also be set using a test case. For example, if you wanted <code>IN_PRODUCTION</code> to be turned off for “localhost”, you could do this:
+</p>
+<pre class="code php"><a href="http://www.php.net/define"><span class="kw3">define</span></a><span class="br0">&#40;</span><span class="st0">'IN_PRODUCTION'</span><span class="sy0">,</span> <span class="br0">&#40;</span><a href="http://www.php.net/strpos"><span class="kw3">strpos</span></a><span class="br0">&#40;</span><span class="re1">$_SERVER</span><span class="br0">&#91;</span><span class="st0">'SERVER_NAME'</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'localhost'</span><span class="br0">&#41;</span> <span class="sy0">===</span> <span class="kw2">FALSE</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre>
+<p>
+Or, if you wanted to only enable production mode for your live website:
+</p>
+<pre class="code php"><a href="http://www.php.net/define"><span class="kw3">define</span></a><span class="br0">&#40;</span><span class="st0">'IN_PRODUCTION'</span><span class="sy0">,</span> <span class="br0">&#40;</span><a href="http://www.php.net/strpos"><span class="kw3">strpos</span></a><span class="br0">&#40;</span><span class="re1">$_SERVER</span><span class="br0">&#91;</span><span class="st0">'SERVER_NAME'</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">'example.com'</span><span class="br0">&#41;</span> <span class="sy0">!==</span> <span class="kw2">FALSE</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span></pre>
+<p>
+Of course, you can always set this to <code>TRUE</code> or <code>FALSE</code> manually, for maximum performance. Generally, using a test case is suitable for “live testing” of new applications. On a high-traffic website, a manual setting would be beneficial.
+</p>
+
+</div>
+
+<h2><a name="update_your_configuration_files" id="update_your_configuration_files">Update Your Configuration Files</a></h2>
+<div class="level2">
+
+<p>
+Kohana provides various default configuration files in the <code>system/config</code> directory.  Since Kohana utilizes a <a href="../../general/filesystem/index.html" class="wikilink1" title="general:filesystem">cascading file system</a>, you have the option to either utilize the default configuration file versions or override these files with your own custom versions by creating a copy in the <code>application/config</code> directory. There are some files that <strong>must</strong> be updated. Read this list carefully!
+</p>
+
+
+<div class='box round'>
+  <b class='xtop'><b class='xb1'></b><b class='xb2'></b><b class='xb3'></b><b class='xb4'></b></b>
+  <div class='xbox'>
+<div class='box_content'><p>
+<strong>Note:</strong> A “enabled” configuration option means a setting of <code>TRUE</code>, and a “disabled” configuration option means a setting of <code>FALSE</code>.
+</p></div>
+  </div>
+  <b class='xbottom'><b class='xb4'></b><b class='xb3'></b><b class='xb2'></b><b class='xb1'></b></b>
+</div>
+
+
+</div>
+
+<h3><a name="config.php" id="config.php">config.php</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Change <code>site_domain</code> from your development setting to the production domain.</div>
+</li>
+<li class="level2"><div class="li"> Disable <code>display_errors</code> disable error messages from being displayed. Errors will still be logged, but a simple, generic error will be displayed instead.</div>
+</li>
+<li class="level2"><div class="li"> Enable <code>global_xss_filtering</code>, unless you are doing manual <a href="http://en.wikipedia.org/wiki/Cross-site_scripting" class="interwiki iw_wp" title="http://en.wikipedia.org/wiki/Cross-site_scripting">XSS</a> filtering.</div>
+</li>
+</ul>
+
+<p>
+
+For slightly higher performance, you can also enable the <code>output_compression</code> option. Using a setting of 4-6, or <code>TRUE</code> will result in a balanced optimization.
+</p>
+
+</div>
+
+<h3><a name="log.php" id="log.php">log.php</a></h3>
+<div class="level3">
+
+<p>
+
+It is recommended to set your log <code>threshold</code> option to <code>1</code>, to enable error logging. If you set <code>threshold</code> to <code>0</code>, no error logs will not be written!
+</p>
+
+</div>
+
+<h3><a name="routes.php" id="routes.php">routes.php</a></h3>
+<div class="level3">
+
+<p>
+
+Make sure to set the <code>_default</code> to your default controller route. This can be a single name, or a full <acronym title="Uniform Resource Identifier">URI</acronym> route.
+</p>
+
+</div>
+
+<h3><a name="database.php" id="database.php">database.php</a></h3>
+<div class="level3">
+
+<p>
+
+If your application uses a database, update the options to match your production database.
+</p>
+
+</div>
+
+<h3><a name="cookie.php" id="cookie.php">cookie.php</a></h3>
+<div class="level3">
+
+<p>
+
+Change options to match your production server settings. Always set the <code>domain</code> option to match your production server name. If wish to have your cookie readable on all sub-domains, add an extra period before the domain name, <code>.example.com</code> instead of <code>example.com</code>.
+</p>
+
+<p>
+It is also recommended to set the <code>expire</code> option to a non-zero value, because it can result in sessions that never expire. A value of <code>7200</code> (2 hours) is generally safe.
+</p>
+
+<p>
+If your website only runs under <code>https://</code>, you should also enable the <code>secure</code> option.
+</p>
+
+</div>
+
+<h3><a name="session.php" id="session.php">session.php</a></h3>
+<div class="level3">
+
+<p>
+
+Update the session <code>name</code> and <code>driver</code> options. If you use the database driver, make sure the session tables are installed in your production database.
+</p>
+
+<p>
+If you use the <code>cookie</code> driver, it is strongly recommended to enable the <code>encryption</code> option.
+</p>
+
+</div>
+
+<h3><a name="encryption.php" id="encryption.php">encryption.php</a></h3>
+<div class="level3">
+
+<p>
+
+If you use the <a href="../../libraries/encrypt/index.html" class="wikilink1" title="libraries:encrypt">Encryption</a> library anywhere, be sure to set a new <code>key</code>. Remember that all previous encrypted data will become unreadable when the <code>key</code> changes!
+</p>
+
+</div>
+
+<h3><a name="auth.php" id="auth.php">auth.php</a></h3>
+<div class="level3">
+
+<p>
+
+If you use the <a href="../../addons/auth/index.html" class="wikilink1" title="addons:auth">Auth</a> module, be sure use a non-default <code>salt_pattern</code>. Remember that all previous passwords will be come unreadable, and will have to be reset, when the <code>salt_pattern</code> changes!
+</p>
+
+</div>
+
+<h2><a name="protect_kohana_directories" id="protect_kohana_directories">Protect Kohana Directories</a></h2>
+<div class="level2">
+
+
+<div class='box round'>
+  <b class='xtop'><b class='xb1'></b><b class='xb2'></b><b class='xb3'></b><b class='xb4'></b></b>
+  <div class='xbox'>
+<div class='box_content'><p>
+If your host does not allow this structure, you can also <a href="http://kohanaphp.com/tutorials/remove_index.html" class="urlextern" title="http://kohanaphp.com/tutorials/remove_index.html"  rel="nofollow">use an .htaccess file</a> to protect the Kohana directories.
+</p></div>
+  </div>
+  <b class='xbottom'><b class='xb4'></b><b class='xb3'></b><b class='xb2'></b><b class='xb1'></b></b>
+</div>
+
+
+<p>
+Although this is an optional step and not required by Kohana, it is considered a good security practice to place as few files as possible in your public web server document root directory.  Since most web hosts give you access to at least one level above the web server document root, this should not be a problem.
+</p>
+
+<p>
+Moving your core Kohana directories also gives you the ability to utilize one central Kohana codebase on your server that can be shared by multiple websites.  You could also create a set of common modules used across all of your web sites.
+</p>
+
+<p>
+To accomplish this in Kohana, do the following:
+
+</p>
+<ol>
+<li class="level1"><div class="li"> move your Kohana <code>system</code>, <code>application</code>, and <code>modules</code> directories at least one level above your document root directory (typically <code>public_html</code> or <code>www</code>).</div>
+</li>
+<li class="level2"><div class="li"> modify the following lines in your <code>index.php</code> file:   </div>
+<ul>
+<li class="level4"><div class="li"> <code>$kohana_application = &#039;../application&#039;;</code></div>
+</li>
+<li class="level4"><div class="li"> <code>$kohana_modules = &#039;../modules&#039;;</code></div>
+</li>
+<li class="level4"><div class="li"> <code>$kohana_system = &#039;../system&#039;;</code></div>
+</li>
+</ul>
+</li>
+</ol>
+
+<p>
+
+<strong>Note:</strong> This example assumes one-level above <code>public_html</code>, however, you can use relative or absolute directories when specifying directory locations.
+</p>
+
+<p>
+Your final directory structure will look similar to this:
+
+</p>
+<pre class="code">   yourdomain_root_directory
+   +- application
+   +- system
+   +- modules
+   +- public_html (web server document root)
+    |    - index.php
+    |    - .htaccess</pre>
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			installation/deployment/2.2.txt &middot; Last modified: 2008/05/01 20:31 (external edit)			&nbsp;
+		</div>
+	</div>
+
+	<div class="bar-left" id="bar__bottomleft">
+		<form class="button btn_source" method="post" action="/installation/deployment/2.2"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>		<form class="button btn_revs" method="get" action="/installation/deployment/2.2"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>	</div>
+	<div class="bar-right" id="bar__bottomright">
+		<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>		<form class="button btn_index" method="get" action="/installation/deployment/2.2"><div class="no"><input type="hidden" name="do" value="index" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [ALT+X]" /></div></form>		<form class="button btn_login" method="get" action="/installation/deployment/2.2"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="805bcc0f31c55d5870e06ca7184bc169" /><input type="submit" value="Login" class="button" title="Login" /></div></form>								&nbsp;
+	</div>
+</div>
+
+<div id="footer"><strong>&copy;2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+</div>
+<div class="no"><img src="../../lib/exe/indexer-id=installation_deployment_2.2&1317315663.php.html" width="1" height="1" alt=""  /></div>
+</body>
+</html>
+
+
+<!-- Localized -->

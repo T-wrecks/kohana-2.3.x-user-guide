@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    general:extending    [Kohana User Guide]
+</title>
+<meta name="generator" content="DokuWiki Release 2008-05-05" />
+<meta name="robots" content="noindex,follow" />
+<meta name="date" content="1969-12-31T18:00:00-0600" />
+<meta name="keywords" content="general,extending" />
+<link rel="search" type="application/opensearchdescription+xml" href="../../lib/exe/opensearch.php.html" title="Kohana User Guide" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="index-do=index.html" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../../feed.php.html" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../../feed-mode=list&ns=general.php.html" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="../../_export/xhtml/general/extending/index.html" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../../_export/raw/general/extending/index.html" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css-s=all&t=kohana.php.html" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css-t=kohana.php.html" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css-s=print&t=kohana.php.html" />
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js-edit=0&write=0.php.html" ></script>
+<link rel="shortcut icon" href="../../lib/tpl/kohana/images/favicon.ico" />
+</head>
+<body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="http://kohanaframework.org/">Kohana</a>
+<!-- End Logo -->
+
+<div id="corner">
+<form action="/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form><br />
+<form class="button btn_recent" method="get" action="/"><div class="no"><input type="hidden" name="do" value="recent" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [ALT+R]" /></div></form></div>
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul>
+<li class="top active"><a href="../../index.html">Contents</a></li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+</ul>
+</div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<p id="version-warning"><strong>This is documentation for Kohana v2.3.x. For v3.x documentation, see <a href="http://kohanaframework.org/guide" class="urlextern" title="http://kohanaframework.org/guide"  rel="nofollow">http://kohanaframework.org/guide</a> .</strong></p>
+
+
+
+
+<h1><a name="this_topic_does_not_exist_yet" id="this_topic_does_not_exist_yet">This topic does not exist yet</a></h1>
+<div class="level1">
+
+<p>
+
+You&#039;ve followed a link to a topic that doesn&#039;t exist yet. If permissions allow, you may create it by using the <code>Create this page</code> button.
+</p>
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+						&nbsp;
+		</div>
+	</div>
+
+	<div class="bar-left" id="bar__bottomleft">
+		<form class="button btn_source" method="post" action="/general/extending"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>		<form class="button btn_revs" method="get" action="/general/extending"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>	</div>
+	<div class="bar-right" id="bar__bottomright">
+		<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>		<form class="button btn_index" method="get" action="/general/extending"><div class="no"><input type="hidden" name="do" value="index" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [ALT+X]" /></div></form>		<form class="button btn_login" method="get" action="/general/extending"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="805bcc0f31c55d5870e06ca7184bc169" /><input type="submit" value="Login" class="button" title="Login" /></div></form>								&nbsp;
+	</div>
+</div>
+
+<div id="footer"><strong>&copy;2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+</div>
+<div class="no"></div>
+</body>
+</html>
+
+
+<!-- Localized -->

@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    libraries:database:configuration    [Kohana User Guide]
+</title>
+<meta name="generator" content="DokuWiki Release 2008-05-05" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-06-20T17:45:22-0500" />
+<meta name="keywords" content="libraries,database,configuration" />
+<link rel="search" type="application/opensearchdescription+xml" href="../../../lib/exe/opensearch.php.html" title="Kohana User Guide" />
+<link rel="start" href="../../../index.html" />
+<link rel="contents" href="index-do=index.html" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../../../feed.php.html" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../../../feed-mode=list&ns=libraries_database.php.html" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="../../../_export/xhtml/libraries/database/configuration/index.html" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../../../_export/raw/libraries/database/configuration/index.html" />
+<link rel="stylesheet" media="all" type="text/css" href="../../../lib/exe/css-s=all&t=kohana.php.html" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../../lib/exe/css-t=kohana.php.html" />
+<link rel="stylesheet" media="print" type="text/css" href="../../../lib/exe/css-s=print&t=kohana.php.html" />
+<script type="text/javascript" charset="utf-8" src="../../../lib/exe/js-edit=0&write=0.php.html" ></script>
+<link rel="shortcut icon" href="../../../lib/tpl/kohana/images/favicon.ico" />
+</head>
+<body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="http://kohanaframework.org/">Kohana</a>
+<!-- End Logo -->
+
+<div id="corner">
+<form action="/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form><br />
+<form class="button btn_recent" method="get" action="/"><div class="no"><input type="hidden" name="do" value="recent" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [ALT+R]" /></div></form></div>
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul>
+<li class="top active"><a href="../../../index.html">Contents</a></li>
+
+
+<li class="top"><a href="../../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+</ul>
+</div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<p id="version-warning"><strong>This is documentation for Kohana v2.3.x. For v3.x documentation, see <a href="http://kohanaframework.org/guide" class="urlextern" title="http://kohanaframework.org/guide"  rel="nofollow">http://kohanaframework.org/guide</a> .</strong></p>
+
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Status</th><td class="col1">Draft</td>
+	</tr>
+	<tr class="row1">
+		<th class="col0">Todo</th><td class="col1">Expand</td>
+	</tr>
+</table>
+
+<p>
+
+<strong><a href="../index.html" class="wikilink1" title="libraries:database">&lt;&lt; Back to Database Main Page</a></strong>
+</p>
+
+
+
+<h1><a name="database_configuration" id="database_configuration">Database Configuration</a></h1>
+<div class="level1">
+
+<p>
+
+To configure the database there should be a file database.php in your application/config directory. If it isn&#039;t there you should copy it from the system/config directory. It will look something like this:
+</p>
+<pre class="code php"><span class="re1">$config</span><span class="br0">&#91;</span><span class="st0">'default'</span><span class="br0">&#93;</span> <span class="sy0">=</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a>
+<span class="br0">&#40;</span>
+	<span class="st0">'benchmark'</span>     <span class="sy0">=&gt;</span> <span class="kw2">TRUE</span><span class="sy0">,</span>
+	<span class="st0">'persistent'</span>    <span class="sy0">=&gt;</span> <span class="kw2">FALSE</span><span class="sy0">,</span>
+	<span class="st0">'connection'</span>    <span class="sy0">=&gt;</span> <a href="http://www.php.net/array"><span class="kw3">array</span></a>
+	<span class="br0">&#40;</span>
+		<span class="st0">'type'</span>     <span class="sy0">=&gt;</span> <span class="st0">'mysql'</span><span class="sy0">,</span>
+		<span class="st0">'user'</span>     <span class="sy0">=&gt;</span> <span class="st0">'dbuser'</span><span class="sy0">,</span>
+		<span class="st0">'pass'</span>     <span class="sy0">=&gt;</span> <span class="st0">'p@ssw0rd'</span><span class="sy0">,</span>
+		<span class="st0">'host'</span>     <span class="sy0">=&gt;</span> <span class="st0">'localhost'</span><span class="sy0">,</span>
+		<span class="st0">'port'</span>     <span class="sy0">=&gt;</span> <span class="kw2">FALSE</span><span class="sy0">,</span>
+		<span class="st0">'socket'</span>   <span class="sy0">=&gt;</span> <span class="kw2">FALSE</span><span class="sy0">,</span>
+		<span class="st0">'database'</span> <span class="sy0">=&gt;</span> <span class="st0">'kohana'</span>
+	<span class="br0">&#41;</span><span class="sy0">,</span>
+	<span class="st0">'character_set'</span> <span class="sy0">=&gt;</span> <span class="st0">'utf8'</span><span class="sy0">,</span>
+	<span class="st0">'table_prefix'</span>  <span class="sy0">=&gt;</span> <span class="st0">''</span><span class="sy0">,</span>
+	<span class="st0">'object'</span>        <span class="sy0">=&gt;</span> <span class="kw2">TRUE</span><span class="sy0">,</span>
+	<span class="st0">'cache'</span>         <span class="sy0">=&gt;</span> <span class="kw2">FALSE</span><span class="sy0">,</span>
+	<span class="st0">'escape'</span>        <span class="sy0">=&gt;</span> <span class="kw2">TRUE</span>
+<span class="br0">&#41;</span><span class="sy0">;</span></pre><ul>
+<li class="level1"><div class="li"> <code>benchmark</code> is used to enable or disable benchmarking</div>
+</li>
+<li class="level1"><div class="li"> <code>persistent</code> is used to enable or disable a <a href="http://us2.php.net/manual/en/features.persistent-connections.php" class="urlextern" title="http://us2.php.net/manual/en/features.persistent-connections.php"  rel="nofollow"> persistent connection</a></div>
+</li>
+<li class="level1"><div class="li"> <code>connection</code> array of specific parameters or supply a valid DSN identifier in the format: driver://user:password@server_or_socket/database </div>
+</li>
+<li class="level1"><div class="li"> <code>character_set</code> which character_set to use</div>
+</li>
+<li class="level1"><div class="li"> <code>table_prefix</code> the table prefix to use for your tables, if any</div>
+</li>
+<li class="level1"><div class="li"> <code>object</code> if set to TRUE, database <a href="../result/index.html" class="wikilink1" title="libraries:database:result">result</a>s return objects by default, otherwise they return arrays.</div>
+</li>
+<li class="level1"><div class="li"> <code>cache</code> enable or disable the query <a href="../cache/index.html" class="wikilink1" title="libraries:database:cache">cache</a></div>
+</li>
+<li class="level1"><div class="li"> <code>escape</code> enable or disable automatic query builder escaping</div>
+</li>
+</ul>
+
+<p>
+ 
+You can have as many $config entries as you need. Each one needs a unique group identifier. You can use multiple config groups to <a href="../connect/index.html" class="wikilink1" title="libraries:database:connect">connect</a> to different databases in the same application.
+</p>
+
+</div>
+
+<h1><a name="database_drivers" id="database_drivers">Database Drivers</a></h1>
+<div class="level1">
+
+<p>
+The database library provides database access to your application using drivers. 
+</p>
+
+<p>
+Currently we have the following drivers available:
+</p>
+<ol>
+<li class="level1"><div class="li"> MsSQL</div>
+</li>
+<li class="level1"><div class="li"> MySQL</div>
+</li>
+<li class="level1"><div class="li"> MySQLi</div>
+</li>
+<li class="level1"><div class="li"> PostgreSQL</div>
+</li>
+<li class="level1"><div class="li"> PDOSqlite (available in SVN)</div>
+</li>
+</ol>
+
+<p>
+<strong><a href="../connect/index.html" class="wikilink1" title="libraries:database:connect">Continue to the next section: Connecting to a database &gt;&gt;</a></strong>
+
+</p>
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			libraries/database/configuration.txt &middot; Last modified: 2010/06/20 17:45 by jordanlev			&nbsp;
+		</div>
+	</div>
+
+	<div class="bar-left" id="bar__bottomleft">
+		<form class="button btn_source" method="post" action="/libraries/database/configuration"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>		<form class="button btn_revs" method="get" action="/libraries/database/configuration"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>	</div>
+	<div class="bar-right" id="bar__bottomright">
+		<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>		<form class="button btn_index" method="get" action="/libraries/database/configuration"><div class="no"><input type="hidden" name="do" value="index" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [ALT+X]" /></div></form>		<form class="button btn_login" method="get" action="/libraries/database/configuration"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="805bcc0f31c55d5870e06ca7184bc169" /><input type="submit" value="Login" class="button" title="Login" /></div></form>								&nbsp;
+	</div>
+</div>
+
+<div id="footer"><strong>&copy;2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+</div>
+<div class="no"><img src="../../../lib/exe/indexer-id=libraries_database_configuration&1317315430.php.html" width="1" height="1" alt=""  /></div>
+</body>
+</html>
+
+
+<!-- Localized -->

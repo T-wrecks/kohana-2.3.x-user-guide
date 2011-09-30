@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    installation:upgrading:2.2    [Kohana User Guide]
+</title>
+<meta name="generator" content="DokuWiki Release 2008-05-05" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-08-13T07:42:44-0500" />
+<meta name="keywords" content="installation,upgrading,2.2" />
+<link rel="search" type="application/opensearchdescription+xml" href="../../lib/exe/opensearch.php.html" title="Kohana User Guide" />
+<link rel="start" href="../../index.html" />
+<link rel="contents" href="2-do=index.2" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="../../feed.php.html" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="../../feed-mode=list&ns=installation_upgrading.php.html" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="../../_export/xhtml/installation/upgrading/2.2" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="../../_export/raw/installation/upgrading/2.2" />
+<link rel="stylesheet" media="all" type="text/css" href="../../lib/exe/css-s=all&t=kohana.php.html" />
+<link rel="stylesheet" media="screen" type="text/css" href="../../lib/exe/css-t=kohana.php.html" />
+<link rel="stylesheet" media="print" type="text/css" href="../../lib/exe/css-s=print&t=kohana.php.html" />
+<script type="text/javascript" charset="utf-8" src="../../lib/exe/js-edit=0&write=0.php.html" ></script>
+<link rel="shortcut icon" href="../../lib/tpl/kohana/images/favicon.ico" />
+</head>
+<body>
+<!-- Start Header -->
+<div id="header">
+
+<!-- Start Logo -->
+<a id="logo" href="http://kohanaframework.org/">Kohana</a>
+<!-- End Logo -->
+
+<div id="corner">
+<form action="/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form><br />
+<form class="button btn_recent" method="get" action="/"><div class="no"><input type="hidden" name="do" value="recent" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [ALT+R]" /></div></form></div>
+
+</div>
+<!-- End Header -->
+
+<div class="menu clearfix">
+<ul>
+<li class="top active"><a href="../../index.html">Contents</a></li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+<li class="top"><a href="../../index.html"><?= $section ?><!--[if IE 7]><!--></a><!--<![endif]-->
+<!--[if lte IE 6]><table><tr><td><![endif]-->
+	<ul>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+				<li><a href="../../%3C/index-=%20$section%20?.html>/<?= $page ?>" title="<?= $name ?>"><?= $name ?></a></li>
+			</ul>
+<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+</li>
+
+
+</ul>
+</div>
+
+
+<!-- Start Body -->
+<div id="body" class="dokuwiki clearfix">
+
+<!-- wikipage start -->
+<p id="version-warning"><strong>This is documentation for Kohana v2.3.x. For v3.x documentation, see <a href="http://kohanaframework.org/guide" class="urlextern" title="http://kohanaframework.org/guide"  rel="nofollow">http://kohanaframework.org/guide</a> .</strong></p>
+
+<!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="level1"><div class="li"><span class="li"><a href="#to_2.2_upgrading" class="toc">2.1 to 2.2 Upgrading</a></span></div>
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#core" class="toc">Core</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#configuration" class="toc">Configuration</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#controllers" class="toc">Controllers</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#libraries" class="toc">Libraries</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#library_changes" class="toc">Library Changes</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Status</th><td class="col1">Draft</td>
+	</tr>
+</table>
+
+
+
+<h1><a name="to_2.2_upgrading" id="to_2.2_upgrading">2.1 to 2.2 Upgrading</a></h1>
+<div class="level1">
+
+</div>
+
+<h2><a name="core" id="core">Core</a></h2>
+<div class="level2">
+
+<p>
+
+All functionality from the <code>Config</code> and <code>Log</code> classes has moved to the core <code>Kohana</code> class. See <a href="../../core/kohana/index.html" class="wikilink1" title="core:kohana">Kohana</a>
+</p>
+
+<p>
+Replace these in your code:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>Config::item</code> with <code>Kohana::config</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Config::set</code> with <code>Kohana::config_set</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Config::load</code> with <code>Kohana::config_load</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Config::clear</code> with <code>Kohana::config_clear</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Log::add</code> with <code>Kohana::log</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Log::write</code> with <code>Kohana::log_save</code></div>
+</li>
+<li class="level1"><div class="li"> <code>Log::directory</code> with <code>Kohana::log_directory</code></div>
+</li>
+</ul>
+
+</div>
+
+<h2><a name="configuration" id="configuration">Configuration</a></h2>
+<div class="level2">
+<ul>
+<li class="level1"><div class="li"> Changes to config/config.php:</div>
+<ul>
+<li class="level2"><div class="li"> <code>site_domain</code> - Changed. Defaults to <code>kohana/</code> You may need to change this to a full domain <code>localhost/kohana/</code></div>
+</li>
+<li class="level2"><div class="li"> <code>internal_cache</code> - New. Defaults is <code>FALSE</code> </div>
+</li>
+<li class="level2"><div class="li"> <code>enable_hooks</code> - New. Default is <code>FALSE</code> Moved from <code>config/hooks.php</code></div>
+</li>
+<li class="level2"><div class="li"> <code>log_threshold</code> - New. Default is <code>1</code> Moved from <code>config/log.php</code></div>
+</li>
+<li class="level2"><div class="li"> <code>log_directory</code> - New. Default is <code>APPPATH.logs</code> Moved from <code>config/log.php</code></div>
+</li>
+<li class="level2"><div class="li"> <code>preload</code> - Removed. You need to manually instance any libraries you had listed.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Changes to config/cookie.php:</div>
+<ul>
+<li class="level2"><div class="li"> <code>prefix</code> - Removed. </div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Changes to config/session.php:</div>
+<ul>
+<li class="level2"><div class="li"> <code>storage</code> - Changed. You need to pass parameters for the <code>database</code> and <code>cache</code> drivers. See <a href="../../libraries/session/index.html" class="wikilink1" title="libraries:session">Session</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Changes to config/database.php:</div>
+<ul>
+<li class="level2"><div class="li"> <code>connection</code> - Changed. Parameters are passed as an array with discrete entries. The old <code>DSN</code> style may still be used.</div>
+</li>
+<li class="level2"><div class="li"> <code>escape</code> - New. Default is <code>TRUE</code> Switch query builder automatic escaping on or off.</div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Changes to config/routes.php:</div>
+<ul>
+<li class="level2"><div class="li"> <code>_allowed</code> - Removed. </div>
+</li>
+<li class="level2"><div class="li"> Shortcuts are removed, use a regular expression. See <a href="../../general/routing/index.html" class="wikilink1" title="general:routing">Routing</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+Note1: Config files <code>config/log.php</code> and <code>config/hooks.php</code> are removed. Now configured in core <code>config</code>
+</p>
+
+</div>
+
+<h2><a name="controllers" id="controllers">Controllers</a></h2>
+<div class="level2">
+
+<p>
+<code>media</code> controller has been removed.
+</p>
+
+<p>
+Special Methods <code>_default</code> and <code>_remap</code> are replace by <code>_ _call($method, $arguments)</code> see <a href="../../general/controllers/index.html" class="wikilink1" title="general:controllers">Controllers</a>
+</p>
+
+<p>
+By default, a <code>404</code> error will be triggered if a non-existent controller method is called, and <code>_ _call</code> is defined. You may override this behaviour
+in your method.
+</p>
+
+<p>
+To simulate <code>_remap</code> The _call method should be the only method in the controller.
+</p>
+
+</div>
+
+<h2><a name="libraries" id="libraries">Libraries</a></h2>
+<div class="level2">
+
+<p>
+
+<code>Loader</code> library has been removed. <code>$this→load(&#039;something&#039;)</code> syntax is obsolete and invalid.
+</p>
+
+<p>
+Libraries and models must now be created using the following syntax: <code>$example = new Example();</code> and <code>$example = new Example_Model();</code>
+</p>
+
+<p>
+Where possible and applicable, use Factories to instance libraries, and reference library objects via their instance:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>$template = View::factory(&#039;admin&#039;)→set(&#039;title&#039;, $title&#039;)→render();</code></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <code>$myname = Session::instance()→get(&#039;myname&#039;)</code></div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="library_changes" id="library_changes">Library Changes</a></h3>
+<div class="level3">
+<ul>
+<li class="level1"><div class="li"> Pagination -  <code>create_links()</code> method has been renamed to <code>render()</code></div>
+</li>
+<li class="level1"><div class="li"> Validation - Completely new implementation, new docs in progress, for now see <a href="http://forum.kohanaphp.com/comments.php?DiscussionID=872&page=1#Item_0" class="urlextern" title="http://forum.kohanaphp.com/comments.php?DiscussionID=872&amp;page=1#Item_0"  rel="nofollow">http://forum.kohanaphp.com/comments.php?DiscussionID=872&amp;page=1#Item_0</a></div>
+</li>
+<li class="level1"><div class="li"> ORM - A new implementation, new docs in progress.</div>
+</li>
+</ul>
+
+</div>
+
+<!-- wikipage stop -->
+
+</div>
+<!-- End Body -->
+
+
+<div id="wikibar" class="clearfix">
+	<div class="meta">
+		<div class="user">
+					</div>
+		<div class="doc">
+			installation/upgrading/2.2.txt &middot; Last modified: 2008/08/13 07:42 by oscarb			&nbsp;
+		</div>
+	</div>
+
+	<div class="bar-left" id="bar__bottomleft">
+		<form class="button btn_source" method="post" action="/installation/upgrading/2.2"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="rev" value="" /><input type="submit" value="Show pagesource" class="button" accesskey="v" title="Show pagesource [ALT+V]" /></div></form>		<form class="button btn_revs" method="get" action="/installation/upgrading/2.2"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [ALT+O]" /></div></form>	</div>
+	<div class="bar-right" id="bar__bottomright">
+		<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>		<form class="button btn_index" method="get" action="/installation/upgrading/2.2"><div class="no"><input type="hidden" name="do" value="index" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [ALT+X]" /></div></form>		<form class="button btn_login" method="get" action="/installation/upgrading/2.2"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="805bcc0f31c55d5870e06ca7184bc169" /><input type="submit" value="Login" class="button" title="Login" /></div></form>								&nbsp;
+	</div>
+</div>
+
+<div id="footer"><strong>&copy;2007-2008 Kohana Team. All rights reserved.</strong></div>
+
+</div>
+<div class="no"><img src="../../lib/exe/indexer-id=installation_upgrading_2.2&1317315664.php.html" width="1" height="1" alt=""  /></div>
+</body>
+</html>
+
+
+<!-- Localized -->
